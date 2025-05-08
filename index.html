@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carrusel Comunidad</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <h2>Lo que dice la <br><strong>COMUNIDAD</strong></h2>
+
+  <div class="carrusel-wrapper">
+    <div class="carrusel" id="carrusel">
+      <div class="tarjeta">
+        <img src="imagenes/perfil2.png"alt="Flor">
+        <p class="texto">“Me compré la remera del programa y no me la saco más. Es cómoda y me hace sentir parte de Luzu.”</p>
+        <p class="nombre">Flor, 25 años, CABA</p>
+      </div>
+      <div class="tarjeta">
+        <img src="imagenes/perfil3.png" alt="Rama">
+        <p class="texto">“El merch de Luzu no es solo ropa, es llevar puesta una comunidad que me hace reír todos los días.”</p>
+        <p class="nombre">Rama, 27 años, Mar del Plata</p>
+      </div>
+      <div class="tarjeta">
+        <img src="imagenes/perfil4.png" alt="Sofi">
+        <p class="texto">“Apenas vi la gorra que usó Nico en el programa, la pedí. ¡Llegó rapidísimo y es igual a la del stream!”</p>
+        <p class="nombre">Sofi, 22 años, Bahía Blanca</p>
+      </div>
+      <div class="tarjeta">
+        <img src="imagenes/perfil2.png" alt="Eli">
+        <p class="texto">“La taza del programa es mi favorita, la uso cada mañana con el stream de fondo.”</p>
+        <p class="nombre">Eli, 30 años, Rosario</p>
+      </div>
+      <div class="tarjeta">
+        <img src="imagenes/perfil3.png" alt="Lucas">
+        <p class="texto">“Ver el programa y tener la campera oficial me hace sentir parte del equipo.”</p>
+        <p class="nombre">Lucas, 28 años, Córdoba</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const carrusel = document.getElementById('carrusel');
+    const tarjetas = document.querySelectorAll('.tarjeta');
+    const tarjetaWidth = tarjetas[0].offsetWidth + 20;
+
+    let isClick = false;
+    let startX;
+    let scrollLeft;
+
+    carrusel.addEventListener('mousedown', (e) => {
+      isClick = true;
+      startX = e.pageX - carrusel.offsetLeft;
+      scrollLeft = carrusel.scrollLeft;
+    });
+
+    carrusel.addEventListener('mouseleave', () => {
+      isClick = false;
+    });
+
+    carrusel.addEventListener('mouseup', () => {
+      isClick = false;
+    });
+
+    carrusel.addEventListener('mousemove', (e) => {
+      if (!isClick) return;
+      e.preventDefault();
+      const x = e.pageX - carrusel.offsetLeft;
+      const walk = (x - startX) * 1.5;
+      carrusel.scrollLeft = scrollLeft - walk;
+    });
+
+    carrusel.addEventListener('touchstart', (e) => {
+      startX = e.touches[0].pageX;
+      scrollLeft = carrusel.scrollLeft;
+    });
+
+    carrusel.addEventListener('touchmove', (e) => {
+      const x = e.touches[0].pageX;
+      const walk = (x - startX) * 1.5;
+      carrusel.scrollLeft = scrollLeft - walk;
+    });
+
+    tarjetas.forEach((tarjeta) => {
+      tarjeta.addEventListener('click', () => {
+        const maxScrollLeft = carrusel.scrollWidth - carrusel.clientWidth;
+        const newScrollLeft = carrusel.scrollLeft + tarjetaWidth;
+        carrusel.scrollLeft = Math.min(newScrollLeft, maxScrollLeft);
+      });
+    });
+  </script>
+
+</body>
+</html>

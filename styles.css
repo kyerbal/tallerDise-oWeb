@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  background: black;
+  color: white;
+  font-family: 'Helvetica Neue', sans-serif;
+  overflow-x: hidden;
+}
+
+h2 {
+  text-align: center;
+  font-style: italic;
+  margin-top: 40px;
+}
+
+.carrusel-wrapper {
+  max-width: 100%;
+  margin: 40px auto;
+  overflow: hidden;
+  padding: 0 40px;
+}
+
+.carrusel {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 20px;
+}
+
+.tarjeta {
+  min-width: 10px;
+  flex: 0 0  auto;
+  background: red;
+  border-radius: 10px;
+  padding: 16px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.tarjeta img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.texto {
+  font-style: italic;
+  font-size: 16px;
+}
+
+.nombre {
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: 1px;
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .tarjeta {
+    min-width: 50%;
+  }
+}
