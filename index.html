@@ -1,95 +1,197 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Carrusel Comunidad</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Luzu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="index.js" defer></script>
 </head>
+
+
 <body>
 
-  <h2>Lo que dice la <br><strong>COMUNIDAD</strong></h2>
+    <marquee behavior="scroll" direction="left" scrollamount="70"
+        style="background: #A239F9; color: #FFFFFF; font-weight: bold; padding: 10px;">
+        10% OFF SI TE SUSCRIBIS A LUZU - 10% OFF SI TE SUSCRIBIS A LUZU - 10% OFF SI TE SUSCRIBIS A LUZU - 10% OFF SI TE
+        SUSCRIBIS A LUZU- 10% OFF SI TE SUSCRIBIS A LUZU- 10% OFF SI TE SUSCRIBIS A LUZU- 10% OFF SI TE SUSCRIBIS A
+        LUZU- 10% OFF SI TE SUSCRIBIS A LUZU- 10% OFF SI TE SUSCRIBIS A LUZU- 10% OFF SI TE SUSCRIBIS A LUZU- 10% OFF SI
+        TE SUSCRIBIS A LUZU- 10% OFF SI TE SUSCRIBIS A LUZU- 10% OFF SI TE SUSCRIBIS A LUZU- 10% OFF SI TE SUSCRIBIS A
+        LUZU- 10% OFF SI TE SUSCRIBIS A LUZU- 10% OFF SI TE SUSCRIBIS A LUZU- 10% OFF SI TE SUSCRIBIS A LUZU- 10% OFF SI
+        TE SUSCRIBIS A LUZU- 10% OFF SI TE SUSCRIBIS A LUZU- 10% OFF SI TE SUSCRIBIS A LUZU- 10% OFF SI TE SUSCRIBIS A
+        LUZU- 10% OFF SI TE SUSCRIBIS A LUZU
+    </marquee>
 
-  <div class="carrusel-wrapper">
-    <div class="carrusel" id="carrusel">
-      <div class="tarjeta">
-        <img src="imagenes/perfil2.png"alt="Flor">
-        <p class="texto">“Me compré la remera del programa y no me la saco más. Es cómoda y me hace sentir parte de Luzu.”</p>
-        <p class="nombre">Flor, 25 años, CABA</p>
-      </div>
-      <div class="tarjeta">
-        <img src="imagenes/perfil3.png" alt="Rama">
-        <p class="texto">“El merch de Luzu no es solo ropa, es llevar puesta una comunidad que me hace reír todos los días.”</p>
-        <p class="nombre">Rama, 27 años, Mar del Plata</p>
-      </div>
-      <div class="tarjeta">
-        <img src="imagenes/perfil4.png" alt="Sofi">
-        <p class="texto">“Apenas vi la gorra que usó Nico en el programa, la pedí. ¡Llegó rapidísimo y es igual a la del stream!”</p>
-        <p class="nombre">Sofi, 22 años, Bahía Blanca</p>
-      </div>
-      <div class="tarjeta">
-        <img src="imagenes/perfil2.png" alt="Eli">
-        <p class="texto">“La taza del programa es mi favorita, la uso cada mañana con el stream de fondo.”</p>
-        <p class="nombre">Eli, 30 años, Rosario</p>
-      </div>
-      <div class="tarjeta">
-        <img src="imagenes/perfil3.png" alt="Lucas">
-        <p class="texto">“Ver el programa y tener la campera oficial me hace sentir parte del equipo.”</p>
-        <p class="nombre">Lucas, 28 años, Córdoba</p>
-      </div>
-    </div>
-  </div>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://luzutv.com.ar" target="_blank" rel="noopener">
+                        <img src="imagenes/logo.jpg" style="height: 50px;">
+                    </a>
+                </li>
 
-  <script>
-    const carrusel = document.getElementById('carrusel');
-    const tarjetas = document.querySelectorAll('.tarjeta');
-    const tarjetaWidth = tarjetas[0].offsetWidth + 20;
+                <li>
+                    <form action="#" method="get">
+                        <input type="search" placeholder="Buscar">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </li>
+                <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                <li><a href="#"><i class="fas fa-user"></i></a></li>
+            </ul>
+        </nav>
+    </header>
 
-    let isClick = false;
-    let startX;
-    let scrollLeft;
+    <section class="hero">
+        <div class="hero-content">
+            <h1>LLEVA EL FLOW DE LUZU ADONDE VAYAS</h1>
+            <p>Sumate a la comunidad y accedé a descuentos exclusivos.</p>
+            <a href="#registro" class="cta-button">¡ No te lo pierdas !</a>
+        </div>
+        <div class="contenedor-grid">
+            <img src="imagenes/fondo3.png" class="fondo" />
+            <img src="imagenes/eba2c7bfc0c149abdf915326d40e3347e0277325.png" class="superpuesta" />
+        </div>
 
-    carrusel.addEventListener('mousedown', (e) => {
-      isClick = true;
-      startX = e.pageX - carrusel.offsetLeft;
-      scrollLeft = carrusel.scrollLeft;
-    });
 
-    carrusel.addEventListener('mouseleave', () => {
-      isClick = false;
-    });
+    </section>
 
-    carrusel.addEventListener('mouseup', () => {
-      isClick = false;
-    });
+    <section class="testimonios">
+        <h2>Lo que dicen de nosotros</h2>
+        <p class="subtexto">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
 
-    carrusel.addEventListener('mousemove', (e) => {
-      if (!isClick) return;
-      e.preventDefault();
-      const x = e.pageX - carrusel.offsetLeft;
-      const walk = (x - startX) * 1.5;
-      carrusel.scrollLeft = scrollLeft - walk;
-    });
+        <div class="carrusel-wrapper">
+            <button class="carrusel-btn prev">&#10094;</button>
 
-    carrusel.addEventListener('touchstart', (e) => {
-      startX = e.touches[0].pageX;
-      scrollLeft = carrusel.scrollLeft;
-    });
+            <div class="carrusel">
+                <!-- Slides -->
+                <div class="slide">
+                    <img src="imagenes/Person 1.png" alt="Foto Testimonio" />
+                    <div class="stars">★★★★☆</div>
+                    <p class="texto">"Lorem ipsum dolor sit amet..."</p>
+                    <strong class="nombre">JORGE GÓMEZ</strong>
+                </div>
+                <div class="slide">
+                    <img src="imagenes/Person 2.png" alt="Foto Testimonio" />
+                    <div class="stars">★★★★★</div>
+                    <p class="texto">"Una experiencia distinta..."</p>
+                    <strong class="nombre">LULI DÍAZ</strong>
+                </div>
+                <div class="slide">
+                    <img src="imagenes/perfil4.png" alt="Foto Testimonio" />
+                    <div class="stars">★★★☆☆</div>
+                    <p class="texto">"Gran calidad y diseño..."</p>
+                    <strong class="nombre">MARTÍN VERA</strong>
+                </div>
+            </div>
 
-    carrusel.addEventListener('touchmove', (e) => {
-      const x = e.touches[0].pageX;
-      const walk = (x - startX) * 1.5;
-      carrusel.scrollLeft = scrollLeft - walk;
-    });
+            <button class="carrusel-btn next">&#10095;</button>
+        </div>
 
-    tarjetas.forEach((tarjeta) => {
-      tarjeta.addEventListener('click', () => {
-        const maxScrollLeft = carrusel.scrollWidth - carrusel.clientWidth;
-        const newScrollLeft = carrusel.scrollLeft + tarjetaWidth;
-        carrusel.scrollLeft = Math.min(newScrollLeft, maxScrollLeft);
-      });
-    });
-  </script>
+        <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+
+    <script>
+        const carrusel = document.querySelector(".carrusel");
+        const slides = document.querySelectorAll(".slide");
+        const prevBtn = document.querySelector(".carrusel-btn.prev");
+        const nextBtn = document.querySelector(".carrusel-btn.next");
+        const dots = document.querySelectorAll(".dot");
+
+        let currentIndex = 0;
+        const totalSlides = slides.length;
+
+        function updateCarrusel() {
+            carrusel.style.transform = `translateX(-${currentIndex * 100}%)`;
+            dots.forEach((dot, i) => {
+                dot.classList.toggle("active", i === currentIndex);
+            });
+        }
+
+        nextBtn.addEventListener("click", () => {
+            if (currentIndex < totalSlides - 1) {
+                currentIndex++;
+                updateCarrusel();
+            }
+        });
+
+        prevBtn.addEventListener("click", () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateCarrusel();
+            }
+        });
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener("click", () => {
+                currentIndex = index;
+                updateCarrusel();
+            });
+        });
+
+        updateCarrusel();
+    </script>
+
+    <section id="registro" class="formulario-usuario">
+        <h2>Registrate</h2>
+        <form action="#" method="post">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="0" required>
+
+            <label for="ubicacion">Ubicación geográfica:</label>
+            <input type="text" id="ubicacion" name="ubicacion" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <section class="sobre-luzu">
+        <div class="container">
+            <h2>¿Qué es Luzu TV?</h2>
+            <p>Luzu TV es una plataforma de entretenimiento digital de argentina que combina lo mejor del formato radial
+                con la espontaneidad de las redes sociales y el streaming. Fue fundado por Nicolas Occhiato en el año
+                2021, se tramite principalmente por Youtube y Twitch, y se consolido como un medio que interpela a las
+                nuevas generacionnes a través de conversaciones descontracturadas, cercanas y espontaneas. <br> Su
+                contenido gira en torno a charlas de actualidad, humor, experiencias personales, entrevistas, y
+                dinámicas con el público, generando una comunidad muy activa en redes sociales. Se destaca por romper
+                con la estructura tradicional de los medios, proponendo un estilo auténtico, informal y emocionalmente
+                directo.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Luzu - Todos los derechos reservados</p>
+        <p>Seguinos en redes:</p>
+        <div class="social-icons">
+            <a href="https://instagram.com/luzutv" class="instagram" target="_blank" aria-label="Instagram LuzuTV">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/@luzutv" class="youtube" target="_blank" aria-label="YouTube LuzuTV">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.tiktok.com/@luzutv" class="tiktok" target="_blank" aria-label="TikTok LuzuTV">
+                <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="https://www.twitch.tv/luzu_tv" class="twitch" target="_blank" aria-label="Twitch LuzuTV">
+                <i class="fab fa-twitch"></i>
+            </a>
+        </div>
+    </footer>
 
 </body>
+
 </html>
