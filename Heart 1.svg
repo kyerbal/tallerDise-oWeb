@@ -1,0 +1,17 @@
+<svg width="91" height="91" viewBox="0 0 91 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="91" height="91" fill="#B7B7B7"/>
+<g id="web" clip-path="url(#clip0_198_512)">
+<rect width="1920" height="5627" transform="translate(-1759 -2047)" fill="black"/>
+<g id="Seccion 2 ( sumar puntos)">
+<rect width="1920" height="1026" transform="translate(-1760 -92)" fill="black"/>
+</g>
+<g id="corazones">
+<path id="Heart 1" d="M90.8532 27.6109C90.8532 12.6646 80.5142 0.904175 67.774 0.904175C57.4863 0.904175 48.7837 8.98083 45.8027 19.8938C42.8192 8.98225 34.1166 1.18524 23.829 1.18524C11.0863 1.18524 0.757324 12.6104 0.757324 27.5624C0.757324 35.1069 3.39527 40.4371 7.64078 46.1411L45.824 91L83.9635 46.1411C88.2127 40.4371 90.8532 35.1497 90.8532 27.6109Z" fill="#FABD8B"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_198_512">
+<rect width="1920" height="5627" fill="white" transform="translate(-1759 -2047)"/>
+</clipPath>
+</defs>
+</svg>

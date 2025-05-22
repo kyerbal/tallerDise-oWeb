@@ -1,196 +1,213 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page Luzu</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="index.js" defer></script>
-</head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
 
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik Mono One:wght@400&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" />
+
+
+
+</head>
 
 <body>
 
-    <marquee behavior="scroll" direction="left" scrollamount="70"
-        style="background: #A239F9; color: #FFFFFF; font-weight: bold; padding: 10px;">
-        10% OFF SI TE SUSCRIBIS A LUZU - 10% OFF SI TE SUSCRIBIS A LUZU - 10% OFF SI TE SUSCRIBIS A LUZU - 10% OFF SI TE
-        SUSCRIBIS A LUZU- 10% OFF SI TE SUSCRIBIS A LUZU- 10% OFF SI TE SUSCRIBIS A LUZU- 10% OFF SI TE SUSCRIBIS A
-        LUZU- 10% OFF SI TE SUSCRIBIS A LUZU- 10% OFF SI TE SUSCRIBIS A LUZU- 10% OFF SI TE SUSCRIBIS A LUZU- 10% OFF SI
-        TE SUSCRIBIS A LUZU- 10% OFF SI TE SUSCRIBIS A LUZU- 10% OFF SI TE SUSCRIBIS A LUZU- 10% OFF SI TE SUSCRIBIS A
-        LUZU- 10% OFF SI TE SUSCRIBIS A LUZU- 10% OFF SI TE SUSCRIBIS A LUZU- 10% OFF SI TE SUSCRIBIS A LUZU- 10% OFF SI
-        TE SUSCRIBIS A LUZU- 10% OFF SI TE SUSCRIBIS A LUZU- 10% OFF SI TE SUSCRIBIS A LUZU- 10% OFF SI TE SUSCRIBIS A
-        LUZU- 10% OFF SI TE SUSCRIBIS A LUZU
-    </marquee>
-
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="https://luzutv.com.ar" target="_blank" rel="noopener">
-                        <img src="imagenes/logo.jpg" style="height: 50px;">
-                    </a>
-                </li>
-
-                <li>
-                    <form action="#" method="get">
-                        <input type="search" placeholder="Buscar">
-                        <button type="submit"><i class="fas fa-search"></i></button>
-                    </form>
-                </li>
-                <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                <li><a href="#"><i class="fas fa-user"></i></a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="hero">
-        <div class="hero-content">
-            <h1>LLEVA EL FLOW DE LUZU ADONDE VAYAS</h1>
-            <p>Sumate a la comunidad y accedé a descuentos exclusivos.</p>
-            <a href="#registro" class="cta-button">¡ No te lo pierdas !</a>
-        </div>
-        <div class="contenedor-grid">
-            <img src="imagenes/fondo3.png" class="fondo" />
-            <img src="imagenes/eba2c7bfc0c149abdf915326d40e3347e0277325.png" class="superpuesta" />
-        </div>
+    <div class="web">
+        <div class="portada">
+            <img class="fondo-foto-icon" alt="" src="fondo foto.jpg">
 
 
-    </section>
 
-    <section class="testimonios">
-        <h2>Lo que dicen de nosotros</h2>
-        <p class="subtexto">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            <div class="fondo-negro">
+            </div>
+            <img class="logo-icon" alt="" src="logo.png">
 
-        <div class="carrusel-wrapper">
-            <button class="carrusel-btn prev">&#10094;</button>
+            <img class="favorito-icon" alt="" src="Favorito.svg" id="favoritoIcon">
 
-            <div class="carrusel">
-                <!-- Slides -->
-                <div class="slide">
-                    <img src="imagenes/Person 1.png" alt="Foto Testimonio" />
-                    <div class="stars">★★★★☆</div>
-                    <p class="texto">"Lorem ipsum dolor sit amet..."</p>
-                    <strong class="nombre">JORGE GÓMEZ</strong>
-                </div>
-                <div class="slide">
-                    <img src="imagenes/Person 2.png" alt="Foto Testimonio" />
-                    <div class="stars">★★★★★</div>
-                    <p class="texto">"Una experiencia distinta..."</p>
-                    <strong class="nombre">LULI DÍAZ</strong>
-                </div>
-                <div class="slide">
-                    <img src="imagenes/perfil4.png" alt="Foto Testimonio" />
-                    <div class="stars">★★★☆☆</div>
-                    <p class="texto">"Gran calidad y diseño..."</p>
-                    <strong class="nombre">MARTÍN VERA</strong>
+            <img class="cartera-icon" alt="" src="Cartera.svg" id="carteraIcon">
+
+            <img class="cuenta-icon" alt="" src="Cuenta.svg" id="cuentaIcon">
+
+            <div class="marquee">
+                <div class="fondo-marquee"></div>
+                <div class="letras" id="marquee">
+                    10% OFF SI TE SUSCRIBIS A LUZU - 10% OFF SI TE SUSCRIBIS A LUZU - 10% OFF SI TE SUSCRIBIS A LUZU -
+                    10% OFF SI TE SUSCRIBIS A LUZU - 10% OFF SI TE SUSCRIBIS A LUZU - 10% OFF SI TE SUSCRIBIS A LUZU -
+                    10% OFF SI TE SUSCRIBIS A LUZU - 10% OFF SI TE SUSCRIBIS A LUZU - 10% OFF SI TE SUSCRIBIS A LUZU -
+                    10% OFF SI TE SUSCRIBIS A LUZU - 10% OFF SI TE SUSCRIBIS A LUZU - 10% OFF SI TE SUSCRIBIS A LUZU -
+                    10% OFF SI TE SUSCRIBIS A LUZU - 10% OFF SI TE SUSCRIBIS A LUZU - 10% OFF SI TE SUSCRIBIS A LUZU -
+                    10% OFF SI TE SUSCRIBIS A LUZU -
                 </div>
             </div>
+            <script src="script.js"></script>
+</body>
 
-            <button class="carrusel-btn next">&#10095;</button>
+</html>
+
+</div>
+<div class="seccion-1-comunidad" data-scroll-to="seccion1Comunidad">
+    <div class="testimonial-1">
+        <span class="testimonial-1-txt-container">
+            <p class="sumate-a-la"> “Me compré la remera del programa y no me la saco más. </p>
+            <p class="sumate-a-la">Es cómoda y me hace sentir</p>
+            <p class="sumate-a-la"> parte de Luzu.”</p>
+        </span>
+    </div>
+    <div class="person-1">
+        <img class="auto-layout-icon" alt="" src="Person 1.png">
+
+    </div>
+    <div class="author-atom-1">
+        <div class="first-lastname">Flor, 25 años, CABA</div>
+    </div>
+    <div class="testimonial-2">
+        <span class="testimonial-1-txt-container">
+            <p class="sumate-a-la"> “El merch de Luzu no es </p>
+            <p class="sumate-a-la">solo ropa, es llevar puesta</p>
+            <p class="sumate-a-la"> una comunidad que me </p>
+            <p class="sumate-a-la">hace reír todos los días.”</p>
+        </span>
+    </div>
+    <div class="person-2">
+        <img class="auto-layout-icon" alt="" src="Person 2.png">
+
+    </div>
+    <div class="author-atom-2">
+        <div class="first-lastname">Rama, 27 años, Mar del Plata</div>
+    </div>
+    <div class="person-3">
+        <img class="auto-layout-icon" alt="" src="Person 3.png">
+
+    </div>
+    <div class="testimonial-3">
+        <span class="testimonial-1-txt-container">
+            <p class="sumate-a-la">“Apenas vi la gorra que usó Nico en el programa, la pedí. ¡Llegó rapidísimo y
+                es igual a la del stream!”</p>
+        </span>
+    </div>
+    <div class="author-atom-3">
+        <div class="first-lastname">Sofi, 22 años, Bahía Blanca</div>
+    </div>
+    <div class="titulo-comunidad">Lo que dice la COMUNIDAD</div>
+</div>
+<div class="seccion-2-sumar-puntos">
+    <div class="texto-tienda">Sumá puntos con cada compra de nuestro merch oficial.</div>
+    <div class="subtitulo-tienda">COMPRÁ EN LA TIENDA</div>
+    <img class="tienda-icon" alt="" src="Tienda.png">
+
+    <div class="texto-compartir">Ganás puntos cada vez que compartís productos o contenido con el hashtag de la
+        comunidad.</div>
+    <div class="titulo-compartir">COMPARTÍ EN REDES </div>
+    <img class="compartir-icon" alt="" src="compartir.png">
+
+    <div class="texto-live">Interactuá en los streams y sumá puntos automáticamente.</div>
+    <div class="titulo-live">PARTICIPÁ EN VIVO</div>
+    <img class="live-icon" alt="" src="live.png">
+
+    <div class="texto-live1">Interactuá en los streams y sumá puntos automáticamente.</div>
+    <div class="titulo-live1">PARTICIPÁ EN VIVO</div>
+    <img class="live-icon1" alt="" src="live.png">
+
+    <div class="titulo-sumar-puntos-container" data-scroll-to="tITULOSUMARPUNTOS">
+        <p class="sum-puntos">¡SUMÁ PUNTOS!</p>
+        <p class="sumate-a-la">Y CONVERTILOS EN DESCUENTOS</p>
+    </div>
+</div>
+<div class="seccion-3-info" data-scroll-to="seccion3Info">
+    <div class="merch">
+        <div class="merch-title">MERCH OFICIAL 100% ORIGINAL</div>
+    </div>
+    <div class="prenda">
+        <img class="prendas-icon" alt="" src="prendas.png">
+
+        <div class="clothing-title">PRENDAS CÓMODAS Y CON ESTILO</div>
+        <div class="clothing-description">Ropa que podés usar todos los días, con diseños exclusivos que
+            representan tu contenido favorito.</div>
+    </div>
+    <div class="edicion-limitada">
+        <img class="edicion-icon" alt="" src="edicion.png">
+
+        <div class="limited-edition-title-container">
+            <p class="sum-puntos">EDICIONES</p>
+            <p class="sumate-a-la">LIMITADAS</p>
         </div>
+        <div class="limited-edition-description">Lanzamientos especiales que no se repiten, ideales para fans
+            verdaderos.</div>
+    </div>
+    <div class="accesorios">
+        <img class="edicion-icon" alt="" src="accesorio.png">
 
-        <div class="dots">
-            <span class="dot active"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
+        <div class="accessories-title">DESDE BÁSICOS HASTA ACCESORIOS</div>
+        <div class="accessories-description">Remeras, buzos, gorras y más, todo con el sello Luzu.</div>
+    </div>
+</div>
+<div class="seccion-4-forms">
+    <div class="formulario">
+        <div class="name-field">
         </div>
-    </section>
-
-    <script>
-        const carrusel = document.querySelector(".carrusel");
-        const slides = document.querySelectorAll(".slide");
-        const prevBtn = document.querySelector(".carrusel-btn.prev");
-        const nextBtn = document.querySelector(".carrusel-btn.next");
-        const dots = document.querySelectorAll(".dot");
-
-        let currentIndex = 0;
-        const totalSlides = slides.length;
-
-        function updateCarrusel() {
-            carrusel.style.transform = `translateX(-${currentIndex * 100}%)`;
-            dots.forEach((dot, i) => {
-                dot.classList.toggle("active", i === currentIndex);
-            });
-        }
-
-        nextBtn.addEventListener("click", () => {
-            if (currentIndex < totalSlides - 1) {
-                currentIndex++;
-                updateCarrusel();
-            }
-        });
-
-        prevBtn.addEventListener("click", () => {
-            if (currentIndex > 0) {
-                currentIndex--;
-                updateCarrusel();
-            }
-        });
-
-        dots.forEach((dot, index) => {
-            dot.addEventListener("click", () => {
-                currentIndex = index;
-                updateCarrusel();
-            });
-        });
-
-        updateCarrusel();
-    </script>
-
-    <section id="registro" class="formulario-usuario">
-        <h2>Registrate</h2>
-        <form action="#" method="post">
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="password">Contraseña:</label>
-            <input type="password" id="password" name="password" required>
-
-            <label for="edad">Edad:</label>
-            <input type="number" id="edad" name="edad" min="0" required>
-
-            <label for="ubicacion">Ubicación geográfica:</label>
-            <input type="text" id="ubicacion" name="ubicacion" required>
-
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-
-    <section class="sobre-luzu">
-        <div class="container">
-            <h2>¿Qué es Luzu TV?</h2>
-            <p>Luzu TV es una plataforma de entretenimiento digital de argentina que combina lo mejor del formato radial
-                con la espontaneidad de las redes sociales y el streaming. Fue fundado por Nicolas Occhiato en el año
-                2021, se tramite principalmente por Youtube y Twitch, y se consolido como un medio que interpela a las
-                nuevas generacionnes a través de conversaciones descontracturadas, cercanas y espontaneas. <br> Su
-                contenido gira en torno a charlas de actualidad, humor, experiencias personales, entrevistas, y
-                dinámicas con el público, generando una comunidad muy activa en redes sociales. Se destaca por romper
-                con la estructura tradicional de los medios, proponendo un estilo auténtico, informal y emocionalmente
-                directo.</p>
+        <div class="email-field">
         </div>
-    </section>
-
-    <footer>
-        <p>© 2025 Luzu - Todos los derechos reservados</p>
-        <p>Seguinos en redes:</p>
-        <div class="social-icons">
-            <a href="https://instagram.com/luzutv" class="instagram" target="_blank" aria-label="Instagram LuzuTV">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.youtube.com/@luzutv" class="youtube" target="_blank" aria-label="YouTube LuzuTV">
-                <i class="fab fa-youtube"></i>
-            </a>
-            <a href="https://www.tiktok.com/@luzutv" class="tiktok" target="_blank" aria-label="TikTok LuzuTV">
-                <i class="fab fa-tiktok"></i>
-            </a>
-            <a href="https://www.twitch.tv/luzu_tv" class="twitch" target="_blank" aria-label="Twitch LuzuTV">
-                <i class="fab fa-twitch"></i>
-            </a>
+        <div class="location-field">
         </div>
-    </footer>
+        <div class="password-field">
+        </div>
+        <div class="text1">Nombre</div>
+        <div class="text2">Correo electrónico</div>
+        <div class="text3">Ubicación geográfica</div>
+        <div class="text4">Crear contraseña</div>
+    </div>
+    <div class="discount-offer">
+        <p class="sum-puntos">LLEVATE </p>
+        <p class="sum-puntos">UN 10% OFF </p>
+        <p class="sumate-a-la">EN NUESTRO MERCH</p>
+    </div>
+    <div class="ctavariante2">
+        <div class="cta1">
+            <div class="text">¡Quiero ser parte!</div>
+        </div>
+    </div>
+    <div class="seccion-4-forms-child">
+    </div>
+    <div class="seccion-4-forms-item">
+    </div>
+    <div class="comunidad">cOMUNIDAD</div>
+    <div class="seccion-4-forms-inner">
+    </div>
+    <div class="rectangle-div">
+    </div>
+    <div class="sumate">SUMATE</div>
+    <div class="seccion-4-forms-child1">
+    </div>
+    <div class="a-la">A LA</div>
+</div>
+<div class="footer">
+    <div class="copyright">©️ 2025 Luzu - Todos los derechos reservados</div>
+    <div class="follow-us">Seguinos en redes:</div>
+    <div class="footer-links">Configuración de las cookies | Nuestros Datos | Términos y Condiciones | Términos
+        y Condiciones Promociones | Política de Cookies |Política de Privacidad | Seleccionar País | Reclamos
+    </div>
+    <img class="footer-child" alt="" src="Group 1.svg">
+
+</div>
+<img class="explosion-icon" alt="" src="Explosion.svg">
+
+<img class="corazones-icon" alt="" src="corazones.svg">
+
+<img class="ondas-icon" alt="" src="ondas.svg">
+
+<img class="rayos-icon" alt="" src="rayos.svg">
+
+</div>
+
+<script src="atajos.js"></script>
+
+
 
 </body>
 

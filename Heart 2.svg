@@ -1,0 +1,14 @@
+<svg width="92" height="91" viewBox="0 0 92 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="92" height="91" fill="#B7B7B7"/>
+<g id="web" clip-path="url(#clip0_198_512)">
+<rect width="1920" height="5627" transform="translate(-1739 -1856)" fill="black"/>
+<g id="corazones">
+<path id="Heart 2" d="M91.0319 26.7067C91.0319 11.7604 80.6929 0 67.9527 0C57.665 0 48.9624 8.07665 45.9815 18.9896C42.998 8.07808 34.2954 0.281063 24.0077 0.281063C11.265 0.281063 0.936035 11.7062 0.936035 26.6582C0.936035 34.2027 3.57398 39.5329 7.81949 45.237L46.0027 90.0958L84.1422 45.237C88.3914 39.5329 91.0319 34.2455 91.0319 26.7067Z" fill="#A239F9"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_198_512">
+<rect width="1920" height="5627" fill="white" transform="translate(-1739 -1856)"/>
+</clipPath>
+</defs>
+</svg>
