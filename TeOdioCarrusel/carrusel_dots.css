@@ -1,0 +1,21 @@
+/* === Puntos de navegación === */
+.carrusel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.carrusel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #666;
+  opacity: 0.4;
+  transition: all 0.3s;
+}
+
+.carrusel-dot.active {
+  background-color: var(--color-khaki);
+  opacity: 1;
+}

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luzu Comunidad</title>
+  <link rel="stylesheet" href="global.css" />
+  <link rel="stylesheet" href="styles2.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Outfit:wght@400;500;600&family=Rubik+Mono+One&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header class="nav">
+    <div class="marquee-container">
+      <span class="marquee">
+        10% OFF SI TE UNÍS A LA COMUNIDAD DE LUZU -&nbsp
+      </span>
+      <span class="marquee">
+        10% OFF SI TE UNÍS A LA COMUNIDAD DE LUZU -&nbsp
+      </span>
+      <span class="marquee">
+        10% OFF SI TE UNÍS A LA COMUNIDAD DE LUZU -&nbsp
+      </span>
+      <span class="marquee">
+        10% OFF SI TE UNÍS A LA COMUNIDAD DE LUZU -&nbsp
+      </span>
+    </div>
+    <nav class="navbar">
+      <img src="imagenes/logo-1.png" alt="Logo Luzu" class="logo" />
+      <ul class="nav-icons">
+        <li>
+          <a href="#comunidad"><img src="imagenes/Comunidad vector.svg" alt="Comunidad" /></a>
+        </li>
+        <li>
+          <a href="#puntos"><img src="imagenes/Puntos vector.svg" alt="Puntos" /></a>
+        </li>
+        <li>
+          <a href="#merch"><img src="imagenes/Shop vector.svg" alt="Shop" /></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            <span class="highlight">Autenticidad que se</span>
+            <span class="highlight">lleva puesta</span>
+          </h1>
+          <p class="hero-subtitle">
+            SUMATE A LA COMUNIDAD <br />
+            Y LLEVATE UNA FORMA DE <br />EXPRESARTE
+          </p>
+          <a href="#form" class="btn-primary">¡QUIERO SER PARTE!</a>
+        </div>
+
+        <div class="hero-image">
+          <img class="estrellas" src="imagenes/estrellas.svg" alt="Estrellas" />
+          <img class="principal" src="imagenes/Foto Principal.png" alt="Foto principal" />
+        </div>
+      </div>
+      <img src="imagenes/Explosion.svg" alt="Explosion" class="explosion" />
+    </section>
+
+    <!-- Comunidad -->
+    <section class="container" id="comunidad">
+      <h2 class="section-title">Lo que dice la comunidad</h2>
+      <div class="carrusel-wrapper">
+        <button class="carrusel-btn prev" data-target="comunidad" aria-label="Anterior">&#10094;</button>
+
+        <div class="carrusel-container">
+          <div class="carrusel-scroll" id="carrusel">
+            <article class="testimonio carrusel-item">
+              <img src="imagenes/persona 1.png" alt="Flor" />
+              <blockquote>
+                “Me compré la remera del programa y no me la saco más. Lo mejor es que cada vez que la uso, alguien me
+                habla de Luzu. Se siente como ser parte de algo más grande.”
+              </blockquote>
+              <p class="autor">Flor, 25 años, CABA</p>
+            </article>
+
+            <article class="testimonio carrusel-item">
+              <img src="imagenes/Persona 2.png" alt="Rama" />
+              <blockquote>
+                “El merch de Luzu no es solo ropa, es como un código entre quienes seguimos el programa.”
+              </blockquote>
+              <p class="autor">Rama, 27 años, Mar del Plata</p>
+            </article>
+
+            <article class="testimonio carrusel-item">
+              <img src="imagenes/Persona 3.png" alt="Sofi" />
+              <blockquote>
+                “Apenas vi la gorra que usó Nico en el programa, la pedí. Es increíble cómo se genera conexión.”
+              </blockquote>
+              <p class="autor">Sofi, 22 años, Bahía Blanca</p>
+            </article>
+          </div>
+        </div>
+
+        <button class="carrusel-btn next" data-target="comunidad" aria-label="Siguiente">&#10095;</button>
+      </div>
+      <div class="carrusel-dots" id="dots-comunidad"></div>
+    </section>
+
+
+
+
+    <!-- Sumar puntos -->
+    <section class="container" id="puntos">
+      <h2 class="section-title">¡Sumá puntos! Y convertilos en descuentos</h2>
+      <div class="carrusel-wrapper">
+        <div class="carrusel-container">
+          <div class="carrusel-scroll" id="carrusel-puntos">
+            <div class="carrusel-item beneficio">
+              <img src="imagenes/tienda imagen.png" alt="Tienda" />
+              <h3>Comprá en la tienda</h3>
+              <p>Sumá puntos con cada compra de nuestro merch oficial.</p>
+            </div>
+            <div class="carrusel-item beneficio">
+              <img src="imagenes/compartir imagen.png" alt="Compartir" />
+              <h3>Compartí en redes</h3>
+              <p>Ganás puntos al compartir productos con el hashtag.</p>
+            </div>
+            <div class="carrusel-item beneficio">
+              <img src="imagenes/live imagen.png" alt="Live" />
+              <h3>Participá en vivo</h3>
+              <p>Interactuá en los streams y sumá puntos automáticamente.</p>
+            </div>
+            <div class="carrusel-item beneficio">
+              <img src="imagenes/logros imagen.png" alt="Logros" />
+              <h3>Conseguí logros</h3>
+              <p>Completá desafíos y desbloqueá recompensas exclusivas.</p>
+            </div>
+          </div>
+        </div>
+        <div class="carrusel-controls">
+          <button class="carrusel-btn prev" data-target="puntos">&#10094;</button>
+          <div class="carrusel-dots" id="dots-puntos"></div>
+          <button class="carrusel-btn next" data-target="puntos">&#10095;</button>
+        </div>
+      </div>
+    </section>
+
+    <img src="imagenes/ondas.svg" class="wave" />
+
+    <!-- Merch -->
+    <section class="container" id="merch">
+      <h2 class="section-title">Merch oficial 100% original</h2>
+      <div class="carrusel-wrapper">
+        <div class="carrusel-container">
+          <div class="carrusel-scroll" id="carrusel-merch">
+            <div class="carrusel-item producto">
+              <img src="imagenes/prendas.png" alt="Prendas" />
+              <h3>PRENDAS CÓMODAS Y CON ESTILO</h3>
+              <p>Ropa que podés usar todos los días, con diseños exclusivos que representan tu contenido favorito.</p>
+            </div>
+            <div class="carrusel-item producto">
+              <img src="imagenes/edicion.png" alt="Ediciones limitadas" />
+              <h3>EDICIONES FULL LIMITADAS</h3>
+              <p>Lanzamientos especiales que no se repiten, ideales para fans verdaderos.</p>
+            </div>
+            <div class="carrusel-item producto">
+              <img src="imagenes/accesorio.png" alt="Accesorios" />
+              <h3>DESDE BÁSICOS HASTA ACCESORIOS</h3>
+              <p>Remeras, buzos, gorras y más. Todo con el sello Luzu.</p>
+            </div>
+          </div>
+        </div>
+        <div class="carrusel-controls">
+          <button class="carrusel-btn prev" data-target="merch">&#10094;</button>
+          <div class="carrusel-dots" id="dots-merch"></div>
+          <button class="carrusel-btn next" data-target="merch">&#10095;</button>
+        </div>
+      </div>
+      <img class="rayos" src="imagenes/rayos.svg" alt="Rayos" />
+    </section>
+
+    <!-- Formulario -->
+    <section class="container" id="form">
+      <video class="form-video-bg" autoplay muted loop playsinline>
+        <source src="imagenes/video.mp4" type="video/mp4" />
+        Tu navegador no soporta el video.
+      </video>
+      <div class="form-container">
+        <div class="form-texto">
+          <h2 class="highlight">SUMATE</h2>
+          <h2 class="highlight">A LA COMUNIDAD</h2>
+          <p>Llevate un 10% OFF <br> en nuestro merch</p>
+        </div>
+        <form id="formulario" class="formulario">
+          <h3>Completá el formulario</h3>
+          <input type="text" id="nombre" name="nombre" placeholder="Nombre" required />
+          <input type="email" id="correo" name="correo" placeholder="Correo electrónico" required />
+          <input type="password" id="contrasena" name="contrasena" placeholder="Crear contraseña" required />
+          <button type="submit" class="btn-submit">¡QUIERO SER PARTE!</button>
+          <div id="mensaje-error" class="error"></div>
+        </form>
+        <div id="exito" class="mensaje-exito" style="display: none">
+          <p id="bienvenida-nombre"></p>
+          <!-- <p>¡BIENVENIDX a la comunidad!</p> -->
+          <p class="cupon">
+            Ya te enviamos tu cupón de <strong> 10% OFF</strong>
+          </p>
+          <button id="cerrar-sesion" class="btn-secondary">
+            Cerrar sesión
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <h2>Seguinos en redes:</h2>
+    <div class="social-icons">
+      <a href="https://www.twitch.tv/luzu_tv"><img src="imagenes/twitch vector.svg" alt="Twitch" /></a>
+      <a href="https://www.youtube.com/@luzutv"><img src="imagenes/yt vector.svg" alt="YouTube" /></a>
+      <a href="https://x.com/cmdeluzu"><img src="imagenes/twitter vector.svg" alt="Twitter" /></a>
+      <a href="https://www.instagram.com/luzutv/"><img src="imagenes/instagram vector.svg" alt="Instagram" /></a>
+    </div>
+    <p>
+      © <span id="currentYear"></span> Luzu - Todos los derechos reservados
+    </p>
+  </footer>
+  <script src="mobile.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

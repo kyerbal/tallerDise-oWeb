@@ -1,0 +1,20 @@
+:root {
+    --color-khaki: #fae463;
+    --color-white: #fff;
+    --color-black: #000;
+    --color-blueviolet: #a239f9;
+    --color-mediumvioletred: #e0388a;
+    --color-dimgray: rgba(102, 102, 102, 0.4);
+    --padding-8: 8px;
+    --padding-14: 14px;
+    --padding-6: 6px;
+    --padding-4: 4px;
+    --br-4: 4px;
+    --font-montserrat: Montserrat;
+    --font-outfit: Outfit;
+    --font-rubik-mono-one: Rubik Mono One;
+    --font-size-30: 30px;
+    --font-size-36: 36px;
+    --font-size-20: 20px;
+    --font-size-16: 16px;
+}
